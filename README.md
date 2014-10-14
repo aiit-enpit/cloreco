@@ -1,5 +1,5 @@
-bigtusk
+cloreco
 =======
-[![Stories in Ready](https://badge.waffle.io/aiit-enpit/bigtusk.svg?label=ready&title=Ready)](http://waffle.io/aiit-enpit/bigtusk)
+[![Stories in Ready](https://badge.waffle.io/aiit-enpit/cloreco.svg?label=ready&title=Ready)](http://waffle.io/aiit-enpit/cloreco)
 
-bigtuskのクローゼットSNSのRepositoryです。
+buzaarのクローゼットSNSのRepositoryです。
