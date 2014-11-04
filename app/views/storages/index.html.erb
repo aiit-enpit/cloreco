@@ -1,0 +1,13 @@
+<h1>storages</h1>
+
+
+<ul>
+    <% @storages.each do |storage| %>
+    <li>
+        <%= link_to storage.title, storage_path(storage.id) %>
+        <%= link_to "[edit]", edit_storage_path(storage.id) %>
+    </li>
+    <% end %>
+</ul>
+
+<p><%= link_to "add new", new_storage_path %></p>
