@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
- resources :storages
+ resources :storages do
+    resources :items
+ end
+
  root 'storages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

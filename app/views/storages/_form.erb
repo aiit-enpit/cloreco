@@ -1,0 +1,15 @@
+<%= form_for @storage do |f| %>
+ 
+<p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+    <% if @storage.errors.any? %>
+    <%= @storage.errors.messages[:title][0] %>
+    <% end %>          
+</p>
+
+<p>
+    <%= f.submit %>
+</p>
+
+<% end %>

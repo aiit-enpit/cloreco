@@ -1,1 +1,12 @@
-<h1><%= @storage.title %></h1>
+<h2><%= @storage.title %></h2>
+
+<%= form_for [@storage, @storage.items.build] do |f| %>
+<%= f.text_field :title %>
+<%= f.submit %>
+<% end %>
+
+<ul>
+<% @storage.items.each do |item| %>
+<li><%= item.title %></li>
+<% end %>
+</ul>
