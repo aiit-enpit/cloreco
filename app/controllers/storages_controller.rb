@@ -43,6 +43,6 @@ class StoragesController < ApplicationController
   private
 
     def storage_params
-        params[:storage].permit(:title)
+        params[:storage].permit(:title, :url)
     end
 end

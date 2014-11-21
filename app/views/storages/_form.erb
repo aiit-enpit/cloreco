@@ -9,6 +9,14 @@
 </p>
 
 <p>
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+    <% if @storage.errors.any? %>
+    <%= @storage.errors.messages[:title][0] %>
+    <% end %>          
+</p>
+
+<p>
     <%= f.submit %>
 </p>
 
