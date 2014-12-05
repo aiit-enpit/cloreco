@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'users/new'
+
+  get 'user/new'
+
  resources :storages do
     resources :items
  end

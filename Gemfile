@@ -41,6 +41,6 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 ruby '2.1.2'
 
-gem "therubyracer"
 gem "less-rails" 
 gem "twitter-bootstrap-rails"
+gem 'bcrypt-ruby', '~> 3.1.0'
