@@ -11,20 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121213945) do
+ActiveRecord::Schema.define(version: 20141205203718) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "items", force: true do |t|
-    t.string   "title"
-    t.string   "link"
-    t.integer  "storage_id"
+    t.string   "item_name"
+    t.string   "brand"
+    t.string   "size"
+    t.string   "color"
+    t.string   "place"
+    t.string   "time"
+    t.string   "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "items", ["storage_id"], name: "index_items_on_storage_id", using: :btree
 
   create_table "storages", force: true do |t|
     t.string   "title"
@@ -32,5 +34,15 @@ ActiveRecord::Schema.define(version: 20141121213945) do
     t.datetime "updated_at"
     t.string   "url"
   end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "password_digest"
+  end
+
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
 end
